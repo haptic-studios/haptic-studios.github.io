@@ -163,6 +163,9 @@ button:focus-visible {
   height: 100vh;
   overflow-y: auto;
   overflow-x: hidden;
+}
+
+.persp {
   perspective: 10px;
 }
 
@@ -239,10 +242,22 @@ button:focus-visible {
   transform: translateZ(-5px) scale(1.5);
 }
 
+.background-left {
+  transform: translateZ(-5px) scale(1.5);
+}
+
 .background {
   position: absolute;
   height: 100%;
   width: 100%;
+  object-fit: cover;
+}
+
+.background-left {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-position: 0px;
   object-fit: cover;
 }
 

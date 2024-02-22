@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { motion } from 'framer-motion';
 import videoUrl from '/src/videos/split-the-world-bg.mp4';
 import logoUrl from '/src/images/haptic-studios-inverted.png';
 import usePageTitle from "../helpers/customHooks/usePageTitle";
@@ -15,8 +14,8 @@ export default function Home() {
         </div>
         <div className="logo-container">
           <img className="studio-logo" src={logoUrl}/>
-          <Link to="/about" className="spaced-letters logo-link link-hover-effect">THE TEAM</Link>
-          <Link to="/games" className="spaced-letters logo-link link-hover-effect">THE GAMES</Link>
+          <Link to="/about" className="spaced-letters logo-link">THE TEAM</Link>
+          <Link to="/games" className="spaced-letters logo-link">THE GAMES</Link>
         </div>
       </CrossfadeContainer>
     )

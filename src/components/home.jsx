@@ -5,7 +5,6 @@ import logoUrl from '/src/images/haptic-studios-inverted.png';
 import usePageTitle from "../helpers/customHooks/usePageTitle";
 import CrossfadeContainer from "./CrossfadeContainer";
 
-
 export default function Home() {
     usePageTitle("Haptic Studios - Home");
     return (

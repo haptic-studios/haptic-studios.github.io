@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import { motion } from 'framer-motion';
+import CrossfadeContainer from "./CrossfadeContainer";
+import usePageTitle from "../helpers/customHooks/usePageTitle";
 
 export default function Games() {
   usePageTitle("Haptic Studios - Games");

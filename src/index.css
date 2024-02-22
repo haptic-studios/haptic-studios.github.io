@@ -191,6 +191,16 @@ button:focus-visible {
   align-items: center;
 }
 
+.mini-divider {
+  background: #000000;
+  height: 75px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
 .divider p, i {
   display: flex;
   justify-content: center;
@@ -198,6 +208,14 @@ button:focus-visible {
   line-height: 40px;
   text-align: center;
   padding: 20px;
+}
+
+.derp {
+  line-height: 35px;
+}
+
+.dark-link:hover {
+  color: gray;
 }
 
 .title-container {

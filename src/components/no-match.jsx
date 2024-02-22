@@ -9,7 +9,7 @@ export default function NoMatch() {
       transition={{ duration: 0.5 }}
       exit={{opacity: 0}}
       className="content-layout">
-      <h2>About</h2>
+      <h2>Oops.</h2>
         <h2>Nothing to see here!</h2>
         <p>
           <Link to="/">Go to the home page</Link>

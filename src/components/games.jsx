@@ -9,7 +9,7 @@ export default function Games() {
       transition={{ duration: 0.5 }}
       exit={{opacity: 0}}
       className="content-layout">
-      <h2>About</h2>
+      <h2>Games</h2>
       </motion.div>
     )
   }

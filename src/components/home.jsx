@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import videoUrl from '/src/videos/split-the-world-bg.mp4';
 import logoUrl from '/src/images/haptic-studios-inverted.png';
 
-
 export default function Home() {
     return (
       <motion.div 

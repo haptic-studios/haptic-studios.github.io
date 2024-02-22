@@ -8,11 +8,12 @@ import { Link } from 'react-router-dom'
 export default function About() {
     usePageTitle("Haptic Studios - About");
     return (
-      <CrossfadeContainer>
+      <CrossfadeContainer className="persp">
         <div className="parallax-section" >
+          <div class="overlay"></div>
           <img className="background" src={logoSVG} />
           <div className="title-container">
-            <h2 className="title spaced-letters">WHO IS HAPTIC STUDIOS?</h2>
+            <h2 className="title spaced-letters">WHO ARE WE?</h2>
           </div>
         </div>
         <div className="divider">
@@ -25,21 +26,21 @@ export default function About() {
         </div>
         <div className="divider">
           <p>Sound Designer, Devleoper, and Marketing Director for Haptic Studios.</p>
-          <i className="derp">"Hey there, I'm Jarett Sisk, co-founder here at Haptic Studios.
+          <i>"Hey there, I'm Jarett Sisk, co-founder here at Haptic Studios.
 Growing up, my twin brother and I always had a controller in hand, lost in the world of pixels. Starting a game studio was honestly a dream we both had since childhood. Fast forward, and here we are, steering the ship at Haptic Studios. It's not just a job; it's a crazy, exciting journey. I hope you enjoy playing our games as much as we enjoy creating them!"</i>
         </div>
         <div className="parallax-section">
-            <img className="background" src={tackBgImage} />
+            <img className="background-left" src={tackBgImage} />
             <h2 className="title spaced-letters">HEY_TACK</h2>
             <h2 className="title spaced-letters">PROGRAMMING | ART | DESIGN</h2>
         </div>
         <div className="divider">
           <p>Lead Developer, Game Designer, and Artist for Haptic Studios.</p> 
           <i>"The first game I ever played was Diddy Kong Racing on the N64 - and I distinctly remember asking myself `How do people make these?`. <br/> Here I am nearly 20 years later, and there are times where I feel no closer to answering that question."</i>
-        </div>
-        <div className="mini-divider">
+          <br/>
           <Link className='dark-link spaced-letters link-hover-effect' to="/">RETURN TO MAIN PAGE</Link>
         </div>
+        <div className="mini-divider"></div>
       </CrossfadeContainer>
     );
   }

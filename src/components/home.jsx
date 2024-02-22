@@ -9,7 +9,7 @@ export default function Home() {
     return (
       <CrossfadeContainer>
         <div className="logo-video-container">
-          <video className="logo-video" src={`${videoUrl}#t=${Math.random() * 60}`} autoPlay loop muted/>
+          <video className="logo-video" src={`${videoUrl}#t=${Math.random() * 60}`} autoPlay loop muted playsinline="true" disablePictureInPicture="true"/>
           <div class="overlay"></div>
         </div>
         <div className="logo-container">

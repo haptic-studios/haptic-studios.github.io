@@ -175,6 +175,19 @@ button:focus-visible {
   background: #000000;
   height: 50%;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.divider p, i {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 40px;
+  text-align: center;
+  padding: 20px;
 }
 
 .title-container {

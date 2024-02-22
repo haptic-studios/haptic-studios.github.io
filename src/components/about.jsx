@@ -2,8 +2,10 @@ import illuminiBgImage from '/src/images/illumini.jpg';
 import tackBgImage from '/src/images/tack.jpg';
 import logoSVG from '/src/images/haptic-studios-compact-logo.svg';
 import CrossfadeContainer from './CrossfadeContainer';
+import usePageTitle from '../helpers/customHooks/usePageTitle';
 
 export default function About() {
+    usePageTitle("Haptic Studios - About");
     return (
       <CrossfadeContainer>
         <div className="parallax-section" >
@@ -13,7 +15,7 @@ export default function About() {
           </div>
         </div>
         <div className="divider">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          <p>Haptic Studios is a independent game development studio, based in the United States. Founded in 2024, by ILLUMINI and Hey_Tack.</p>
         </div>
         <div className="parallax-section justify-end">
             <img className="background" src={illuminiBgImage} />
@@ -21,7 +23,8 @@ export default function About() {
             <h2 className="title spaced-letters text-border">SOUND DESIGN | DEVELOPMENT | MARKETING</h2>
         </div>
         <div className="divider">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          <p>Sound Designer, Devleoper, and Marketing Director for Haptic Studios</p>
+          <p></p>
         </div>
         <div className="parallax-section">
             <img className="background" src={tackBgImage} />
@@ -29,7 +32,8 @@ export default function About() {
             <h2 className="title spaced-letters">PROGRAMMING | ART | DESIGN</h2>
         </div>
         <div className="divider">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          <p>Lead Developer, Game Designer, and Artist for Haptic Studios.</p> 
+          <i>"The first game I ever played was Diddy Kong Racing on the N64 - and I distinctly remember asking myself `How do people make these?`. <br/> Here I am nearly 20 years later, and there are times where I feel no closer to answering that question."</i>
         </div>
       </CrossfadeContainer>
     );

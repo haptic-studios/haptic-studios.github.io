@@ -15,8 +15,8 @@ export default function Home() {
         </div>
         <div className="logo-container">
           <img className="studio-logo" src={logoUrl}/>
-          <Link to="/about" className="spaced-letters logo-link">THE TEAM</Link>
-          <Link to="/games" className="spaced-letters logo-link">THE GAMES</Link>
+          <Link to="/about" className="spaced-letters logo-link link-hover-effect">THE TEAM</Link>
+          <Link to="/games" className="spaced-letters logo-link link-hover-effect">THE GAMES</Link>
         </div>
       </CrossfadeContainer>
     )

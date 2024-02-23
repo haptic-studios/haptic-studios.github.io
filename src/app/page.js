@@ -14,7 +14,7 @@ export default function Home() {
             <title>Haptic Studios</title>
         </Head>
         <div className="logo-video-container">
-            <video className="logo-video" src={`${videoUrl}#t=${Math.random() * 60}`} autoPlay loop muted playsinline="true" disablePictureInPicture="true"/>
+            <video className="logo-video" src={`${videoUrl}#t=${Math.random() * 60}`} autoPlay loop muted playsInline disablePictureInPicture/>
             <div className="overlay"></div>
         </div>
         <div className="logo-container">

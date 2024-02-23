@@ -214,6 +214,10 @@ button:focus-visible {
   padding: 20px;
 }
 
+i {
+  font-style: italic;
+}
+
 .derp {
   line-height: 35px;
 }

@@ -125,6 +125,7 @@ button:focus-visible {
 }
 
 .studio-logo {
+  position: unset !important;
   max-width: 50vh;
   max-height: 75vh;
 }

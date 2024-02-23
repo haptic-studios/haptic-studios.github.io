@@ -1,7 +1,7 @@
+'use client'
 import { motion } from 'framer-motion';
 import React from 'react';
 const CrossfadeContainer = (props) => {
-    console.log(props.children)
     return (
         <motion.div 
         initial={{ opacity: 0}}

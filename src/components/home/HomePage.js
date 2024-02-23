@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Head from "next/head";
+import Image from "next/image";
 import CrossfadeContainer from "@/helpers/CrossfadeContainer";
 
 const logoUrl = '/images/haptic-studios-inverted.png';
@@ -17,7 +18,7 @@ export default function HomePage() {
             <div className="overlay"></div>
         </div>
         <div className="logo-container">
-          <img className="studio-logo" src={logoUrl}/>
+          <Image className="studio-logo" src={logoUrl} alt="The Haptic Studios Logo"/>
           <Link href="/about" className="spaced-letters logo-link link-hover-effect">THE TEAM</Link>
           <Link href="/games" className="spaced-letters logo-link link-hover-effect">THE GAMES</Link>
         </div>

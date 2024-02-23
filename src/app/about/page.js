@@ -1,7 +1,7 @@
-import Image from "next/image";
+import AboutPage from "@/components/about/AboutPage";
 
 export default function About() {
-  return (
-        <p>Hello Test</p>
-  );
-}
+    return (
+      <AboutPage />
+    );
+  }

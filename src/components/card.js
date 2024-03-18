@@ -15,10 +15,11 @@ function onMouseExit(event, videoRef) {
     videoRef.current.pause();
 }
 
-export default function Card({imageSrc, imageAlt, hoverVideo, title, shortDescription}) {
+export default function Card({imageSrc, imageAlt, hoverVideo, title, shortDescription, playUrl, playText, tags}) {
     const videoRef = useRef(null);
+
     return (
-        <div className="card max-w-sm rounded overflow-hidden shadow-lg"
+        <div className="card max-w-sm rounded overflow-hidden shadow-lg bg-zinc-900"
             onMouseOver={event => onMouseHover(event, videoRef)}
             onMouseLeave={event => onMouseExit(event, videoRef)}>
             <div className="card-image-container">
@@ -26,16 +27,15 @@ export default function Card({imageSrc, imageAlt, hoverVideo, title, shortDescri
                 <video ref={videoRef} className="w-full hiddenVideo" src={hoverVideo || videoUrl} loop muted playsInline disablePictureInPicture/>
             </div>
             <div className="px-6 py-4">
-                <div className="font-bold text-xl mb-2">{title}</div>
+                <div className="font-bold text-xl mb-3">{title}</div>
                 <i className="text-base p-0 text-left">
                 {shortDescription}
                 </i>
+                <div className="w-full text-center p-3 mt-4">
+                    <a href={playUrl} className="text-black bg-gray-700 hover:bg-gray-200 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-gray-300 dark:hover:bg-gray-600 focus:outline-none dark:focus:ring-gray-800">{playText}</a>
+                </div>
             </div>
-            <div className="px-6 pt-4 pb-2">
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-            </div>
+            {tags}
         </div>
     )
-  }
+}

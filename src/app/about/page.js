@@ -19,7 +19,7 @@ export default function About() {
           <div className="divider">
             <p>Haptic Studios is an independent game development studio, based in the United States. Founded in 2024, by brothers ILLUMINI and Hey_Tack.</p>
           </div>
-          <div className="parallax-section justify-end">
+          <div className="parallax-section justify-end pb-10">
               <Image className="background" fill="true" src={illuminiBgImage} alt="An image of ILLUMINI, leaning against a brick wall."/>
               <h2 className="title spaced-letters text-border">ILLUMINI</h2>
               <h2 className="title spaced-letters text-border">SOUND DESIGN | DEVELOPMENT | MARKETING</h2>

@@ -10,6 +10,9 @@ const kingOFLiftVideo = './videos/king-of-lift.mp4';
 const shortWalkInTheSnowImage = './images/a-short-walk-in-the-snow.png';
 const shortWalkInTheSnowVideo = './videos/a-short-walk-in-the-snow.mp4';
 
+const legendOfBasinImage = './images/legend-of-basin.png';
+const legendOfBasinVideo = './videos/legend-of-basin.mp4';
+
 export default function Games() {
     return (
         <CrossfadeContainer>
@@ -58,7 +61,22 @@ export default function Games() {
               tags={(
                 <div className="px-6 pt-2 pb-2">
                   <span className={`inline-block bg-green-200 rounded-full px-3 py-1 text-sm font-semibold mr-2 text-black mb-2`}>Browser</span>
-                  <span className={`inline-block bg-red-500 rounded-full px-3 py-1 text-sm font-semibold text-black mr-2 mb-2`}>Pirate Software Jam #14</span>
+                  <span className={`inline-block bg-red-500 rounded-full px-3 py-1 text-sm font-semibold text-black mr-2 mb-2`}>Acerola Jam #0</span>
+                </div>
+              )}
+            ></Card>
+            <Card 
+              title="The Legend of Basin: Clay of Memories" 
+              imageSrc={legendOfBasinImage}
+              imageAlt="The title image for the game 'The Legend of Basin: Clay of Memories'"
+              hoverVideo={legendOfBasinVideo}
+              shortDescription="A short RPG about throwing pots, and saving your island."
+              playText="Play Now on itch.io"
+              playUrl="https://hey-tack.itch.io/the-legend-of-basin-clay-of-memories"
+              tags={(
+                <div className="px-6 pt-2 pb-2">
+                  <span className={`inline-block bg-green-200 rounded-full px-3 py-1 text-sm font-semibold mr-2 text-black mb-2`}>Browser</span>
+                  <span className={`inline-block bg-pink-500 rounded-full px-3 py-1 text-sm font-semibold text-black mr-2 mb-2`}>Brackeys Game Jam 2024.2</span>
                 </div>
               )}
             ></Card>
